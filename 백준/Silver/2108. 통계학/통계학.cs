@@ -25,10 +25,10 @@ namespace Project1
             //산술평균
             decimal avg = 0;
             //중앙값
-            float middle = 0;
+            int middle = 0;
             //최빈값
             int maxmax = 0;
-            int[] plusNumArray = new int[8002];
+            int[] plusNumArray = new int[8001];
             int count = 0;
             //범위
             int maxmin = 0;
@@ -70,7 +70,7 @@ namespace Project1
             int max = plusNumArray.Max();
 
             //최빈값이 2개이상인지 검사하기
-            for (int j = 0; j <8002; j++)
+            for (int j = 0; j <8001; j++)
             {
                 if (plusNumArray[j] == max)
                 {
@@ -88,7 +88,7 @@ namespace Project1
             //2개일때는 제일 큰 값을 0으로 초기화 해주고, 두번째 값을 구하기
             if (count == 2)
             {
-                for (int j = 0; j < 8002; j++)
+                for (int j = 0; j < 8001; j++)
                 {
                     if (plusNumArray[j] == max)
                     {
@@ -109,7 +109,7 @@ namespace Project1
             sb.Append(Math.Round(avg, 0) + "\n");
             sb.Append(middle + "\n");
             sb.Append((maxmax - 4000) + "\n");
-            sb.Append(Math.Abs(maxmin));
+            sb.Append(maxmin);
             //[3]결과
             /*            Console.WriteLine(Math.Round(avg));
                         Console.WriteLine(middle);
