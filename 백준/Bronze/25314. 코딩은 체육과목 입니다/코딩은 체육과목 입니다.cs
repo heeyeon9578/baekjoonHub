@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Project1
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            string wordLong = "long";
+            string inputValue = Console.ReadLine();
+            int inputValueNum= int.Parse(inputValue);
+            for(int i=0; i<inputValueNum/4; i++) 
+            {
+                Console.Write(wordLong+" ");
+            }
+            Console.WriteLine("int");
+
+
+
+        }
+    }
+}
